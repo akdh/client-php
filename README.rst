@@ -53,7 +53,7 @@ sample PHP code::
 
        include_once 'Services/SmartFile/BasicClient.php';
        $api = new Service_SmartFile_BasicClient('**********', '**********');
-       $api->get('/ping');
+       $api->get('/ping/');
 
 
 OAuth Authentication
@@ -75,7 +75,7 @@ sample PHP code::
     // This example uses raw_input to get the verification from the console:
     $clientVerification = trim(fgets(STDIN));
     $api.getAccessToken($clientVerification);
-    $api.get('/ping');
+    $api.get('/ping/');
 
 Calling endpoints
 -----------------
